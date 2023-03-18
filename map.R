@@ -59,8 +59,8 @@ transects <- data.frame(line = c(rep("K1", 2), rep("K2", 2), rep("K3", 2),
 #### 1.2 Base map ####
 require(sf)
 crop <- c(xmin = 14.1766, xmax = 14.575, ymin = 35.786, ymax = 36.09)
-base <- read_sf("~/Desktop/University of Malta/Posidonia/Data/land-polygons-complete-4326/land_polygons.shp") %>% st_crop(crop)
-seagrass <- read_sf("~/Desktop/University of Malta/Posidonia/Data/014_001_WCMC013-014_SeagrassPtPy2021_v7_1/01_Data/WCMC013014-Seagrasses-Py-v7_1.shp")
+base <- read_sf("~/PATH/land-polygons-complete-4326/land_polygons.shp") %>% st_crop(crop)
+seagrass <- read_sf("~/PATH/014_001_WCMC013-014_SeagrassPtPy2021_v7_1/01_Data/WCMC013014-Seagrasses-Py-v7_1.shp")
 seagrass <- st_transform(seagrass, crs = 4326)
 seagrass <- st_make_valid(seagrass)
 seagrass <- seagrass %>% st_crop(crop)
@@ -138,4 +138,3 @@ detach(package:cowplot)
 rm(list = ls())
 graphics.off()
 cat("\014")
-
