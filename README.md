@@ -1,18 +1,23 @@
 # Impacts of thermal effluent on *Posidonia oceanica* and associated macrofauna
-This repository contains data and annotated R code accompanying article 10.3354/meps14261 in *Marine Ecology Progress Series*. The repository containes the four data and code folders **Introduction**, **Density**, **Predation** and **Physiology** alongside all final **Figures** in vector format. Below is a description of each column within each dataset and the input and output of each R script.
+This repository contains data and annotated R code accompanying article 10.3354/meps14261 in *Marine Ecology Progress Series*. The repository containes the five data and code folders **Physchem**, **Seagrass sub-plant**, **Seagrass plant**, **Seagrass habitat** and **Fauna** alongside `map.R` and all final **Figures** in vector format. Below is a description of each column within each dataset and the input and output of each R script.
 
-**Introduction**
-1. `Steromphala.csv`: Data on the lower and upper limits of the vertical distributions of *Steromphala cineraria* and *S. umbilicalis*.
-    - **reference** = author name and year of referenced data
-    - **doi** = digital object identifier or uniform resource locator of referenced data
-    - **species** = categorical variable with levels *Steromphala cineraria* and *Steromphala umbilicalis*
-    - **lower** = lower distributional limit in relation to lowest astronomical tide given in metres
-    - **upper** = upper distributional limit in relation to lowest astronomical tide given in metres
-2. `Steromphala.R`: Code to calculate introductory descriptive statistics.
-    - **Input** = `Steromphala.csv`
-    - **Output** = *Steromphala* spp. distribution descriptive statistics in paragraph two of the introduction
+`map.R`
 
-**Density**
+**Physchem**
+1. `physchem.csv`: Temperature, pH and salinity data for the study sites.
+    - **Site** = 
+    - **Month** = 
+    - **Position** = 
+    - **Depth** = 
+    - **Distance** = 
+    - **Salinity** =
+    - **pH** = 
+    - **Temperature** = 
+2. `physchem.R`: Code to analyse temperature, pH and salinity data.
+    - **Input** = `physchem.csv`
+    - **Output** = Figure 2 and section 3.1
+
+**Seagrass sub-plant**
 1. `density.csv`: Density data for *Phorcus turbinatus*, *Stramonita haemastoma* and *Thalassoma pavo*.
     - **site** = categorical variable with levels Xwejni, Dwejra and Ras 
     - **date** = date given as DD.MM.YY
@@ -23,7 +28,7 @@ This repository contains data and annotated R code accompanying article 10.3354/
     - **Input** = `density.csv`, `distribution.csv` from **Predation**
     - **Output** = Figure 1, *Phorcus turbinatus* site-specific density and distribution results
 
-**Predation**
+**Seagrass plant**
 1. `distribution.csv`: Vertical distribution data for all studied species.
     - **site** = categorical variable with levels Xwejni, Dwejra and Ras
     - **date** = date given as DD.MM.YY
@@ -65,7 +70,7 @@ This repository contains data and annotated R code accompanying article 10.3354/
     - **Input** = `muricids.csv` 
     - **Output** = Figure S4, *in vitro* predation results
     
-**Physiology**
+**Seagrass habitat**
 1. `length.mass.csv`: Paired measurements of length and mass for all studied gastropods.
     - **species** = categorical variable with levels *Phorcus turbinatus*, *Stramonita haemastoma* and *Hexaplex trunculus*
     - **length** = shell length given in millimetres
@@ -84,5 +89,8 @@ This repository contains data and annotated R code accompanying article 10.3354/
 2. `Irradiance.R`: Code to analyse and visualise length-mass relationship and survival data.
     - **Input** = `length.mass.csv`, `physiology.csv`
     - **Output** = Figure 3, Figure S2, physiology and allometry results
+
+**Fauna**
+
 
 Luka Seamus Wright, 28 February 2023
