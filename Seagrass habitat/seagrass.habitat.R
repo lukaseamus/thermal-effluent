@@ -6,7 +6,7 @@
 
 #### 1.    Data exploration ####
 #### 1.1   Load data ####
-seagrass <- read.csv("~/Desktop/University of Malta/Posidonia/Data/seagrass.habitat.csv")
+seagrass <- read.csv("~/PATH/seagrass.habitat.csv")
 epiphytes <- seagrass[81:160,]
 seagrass <- seagrass[1:80,]
 
@@ -565,4 +565,3 @@ detach(package:ggplot2)
 rm(list = ls())
 graphics.off()
 cat("\014")
-
