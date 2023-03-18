@@ -5,7 +5,7 @@
 ###########################################################################
 
 #### 1.    Load data ####
-fauna <- read.csv("~/Desktop/University of Malta/Posidonia/Data/fauna.csv")
+fauna <- read.csv("~/PATH/fauna.csv")
 
 #### 2.    Data wrangling ####
 spec <- data.frame(fauna[,4:70], row.names = 1) # species abundance data
@@ -2066,4 +2066,3 @@ detach(package:ggplot2)
 rm(list = ls())
 graphics.off()
 cat("\014")
-
