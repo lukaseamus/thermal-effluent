@@ -6,7 +6,7 @@
 
 #### 1.    Data exploration ####
 #### 1.1   Load data ####
-seagrass <- read.csv("~/Desktop/University of Malta/Posidonia/Data/seagrass.subplant.csv")
+seagrass <- read.csv("~/PATH/seagrass.subplant.csv")
 seagrass <- seagrass[1:240,]
 
 #### 1.2   Rename variables ####
