@@ -6,7 +6,7 @@
 
 #### 1.    Data exploration ####
 #### 1.1   Load data ####
-physchem <- read.csv("~/Desktop/University of Malta/Posidonia/Data/physchem.csv")
+physchem <- read.csv("~/PATH/physchem.csv")
 
 #### 1.2   Test for relationships ####
 require(ggplot2)
@@ -1002,4 +1002,3 @@ detach(package:ggplot2)
 rm(list = ls())
 graphics.off()
 cat("\014")
-
