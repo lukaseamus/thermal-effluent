@@ -1,5 +1,5 @@
 # Impacts of thermal effluent on *Posidonia oceanica* and associated macrofauna
-This repository contains data and annotated R code accompanying article 10.3354/meps14261 in *Marine Ecology Progress Series*. The repository containes the five data and code folders **Physchem**, **Seagrass sub-plant**, **Seagrass plant**, **Seagrass habitat** and **Fauna** alongside `map.R` and all final **Figures** in vector format. Below is a description of each column within each dataset and the input and output of each R script.
+This repository contains data and annotated R code accompanying article 10.3354/meps14261 in *Marine Ecology Progress Series*, split into the five data and code folders **Physchem**, **Seagrass sub-plant**, **Seagrass plant**, **Seagrass habitat** and **Fauna** alongside `map.R`, all final **Figures** in vector format and the published `Manuscript.pdf` and `Supplement.pdf`. Below is a description of each column within each dataset and the input and output of each R script.
 
 `map.R`: Code to build and visualise the map of Malta and the study site (the Mediterranean map was built in QGIS).
 - **Input** = `land_polygons.shp`, `WCMC013014-Seagrasses-Py-v7_1.shp`, which can be downloaded from https://osmdata.openstreetmap.de/data/land-polygons.html and https://data.unep-wcmc.org/datasets/7 respectively
