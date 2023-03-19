@@ -1,8 +1,8 @@
-###########################################################################
-## Project: Effect of thermal effluent on Posidonia oceanica communities ##
-## Script purpose: Visualisation of site map                             ##
-## Author: Luka Seamus Wright                                            ##
-###########################################################################
+##########################################################################################
+## Project: Impacts of thermal effluent on Posidonia oceanica and associated macrofauna ##
+## Script purpose: Visualisation of site map                                            ##
+## Author: Luka Seamus Wright                                                           ##
+##########################################################################################
 
 #### 1.  Spatial data ####
 #### 1.1 Sites ####
