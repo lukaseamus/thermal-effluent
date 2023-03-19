@@ -1,30 +1,33 @@
 # Impacts of thermal effluent on *Posidonia oceanica* and associated macrofauna
 This repository contains data and annotated R code accompanying article 10.3354/meps14261 in *Marine Ecology Progress Series*. The repository containes the five data and code folders **Physchem**, **Seagrass sub-plant**, **Seagrass plant**, **Seagrass habitat** and **Fauna** alongside `map.R` and all final **Figures** in vector format. Below is a description of each column within each dataset and the input and output of each R script.
 
-`map.R`
+`map.R`: Code to build the map of Malta and the study site (the Mediterranean map was built in QGIS).
+- **Input** = `land_polygons.shp`, `WCMC013014-Seagrasses-Py-v7_1.shp`, which can be downloaded from https://osmdata.openstreetmap.de/data/land-polygons.html and https://data.unep-wcmc.org/datasets/7 respectively
+- **Output** = Figure 1
 
 **Physchem**
 1. `physchem.csv`: Temperature, pH and salinity data for the study sites.
-    - **Site** = 
-    - **Month** = 
-    - **Position** = 
-    - **Depth** = 
-    - **Distance** = 
-    - **Salinity** =
-    - **pH** = 
-    - **Temperature** = 
+    - **Site** = categorical variable with levels Kbira (short for Il-Ħofra l-Kbira, control site) and Zghira (short for Il-Ħofra ż-Żgħira, treatment site)
+    - **Month** = categorical variable with levels February, June, July and September
+    - **Position** = categorical variable with levels Surface and Meadow, indicating the position of measurment and enabling detection of clines
+    - **Depth** = continuous alternative to **Position** given in metres below the sea surface 
+    - **Distance** = distance from the thermal outlet given in metres
+    - **Salinity** = salinity (‰)
+    - **pH** = pH
+    - **Temperature** = temperature (°C)
 2. `physchem.R`: Code to analyse temperature, pH and salinity data.
     - **Input** = `physchem.csv`
-    - **Output** = Figure 2 and section 3.1
+    - **Output** = Figure 2 and section 3.1 in `Manuscript.pdf`
 
 **Seagrass sub-plant**
-1. `density.csv`: Density data for *Phorcus turbinatus*, *Stramonita haemastoma* and *Thalassoma pavo*.
-    - **site** = categorical variable with levels Xwejni, Dwejra and Ras 
-    - **date** = date given as DD.MM.YY
-    - **species** = categorical variable with levels *Phorcus turbinatus*, *Stramonita haemastoma* and *Thalassoma pavo*
-    - **original** = count of individuals in defined area (40-cm quadrat for *Phorcus turbinatus* and *Stramonita haemastoma*, 1×10-m transect for *Thalassoma pavo*)
-    - **adjusted** = density given per square metre
-2. `density.R`: Code to analyse and visualise *Phorcus turbinatus* density and distribution data.
+1. `seagrass.subplant.csv`: *Posidnia oceanica* metrics at the sub-plant level, where plant is defined as a single shoot.
+    - **Site** = categorical variable with levels Kbira (short for Il-Ħofra l-Kbira, control site) and Zghira (short for Il-Ħofra ż-Żgħira, treatment site)
+    - **Plot** = categorical variable of sampling plots nested within sites with levels A, B, C and D in order of decreasing distance
+    - **Distance** = distance from the thermal outlet given in metres, a continuous reexpression of **Plot**
+    - **Stage** = categorical variable of within-shoot leaf growth stage with levels Juvenile, Intermediate and Adult
+    - **Leaves** = number of leaves of the respective growth stage per shoot
+    - **Area** = leaf area of the respective growth stage per shoot
+2. `seagrass.subplant.R`: Code to analyse and visualise *Phorcus turbinatus* density and distribution data.
     - **Input** = `density.csv`, `distribution.csv` from **Predation**
     - **Output** = Figure 1, *Phorcus turbinatus* site-specific density and distribution results
 
