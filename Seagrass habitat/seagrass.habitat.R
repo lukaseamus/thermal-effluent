@@ -1,8 +1,8 @@
-###########################################################################
-## Project: Effect of thermal effluent on Posidonia oceanica communities ##
-## Script purpose: Analysis of seagrass habitat data                     ##
-## Author: Luka Seamus Wright                                            ##
-###########################################################################
+##########################################################################################
+## Project: Impacts of thermal effluent on Posidonia oceanica and associated macrofauna ##
+## Script purpose: Analysis of seagrass habitat data                                    ##
+## Author: Luka Seamus Wright                                                           ##
+##########################################################################################
 
 #### 1.    Data exploration ####
 #### 1.1   Load data ####
